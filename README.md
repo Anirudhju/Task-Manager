@@ -3,19 +3,19 @@ This is a simple Spring Boot application that provides CRUD operations for manag
 
 Open the project in your IDE.
 
-Set up the MySQL database by executing the SQL script in src/main/resources/schema.sql using MySQL Workbench or any MySQL client.
+Create a database in MySQL and access it using MySQL Workbench.
 
 Configure the database connection in src/main/resources/application.properties:
 
 properties
 Copy code
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
+spring.datasource.url=jdbc:mysql://localhost:3306/my_tasks
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-Replace your_db_name, your_db_username, and your_db_password with your MySQL database details.
+Replace your_db_username, and your_db_password with your MySQL database details.
 
 Run the Spring Boot application.
 Open Postman.
